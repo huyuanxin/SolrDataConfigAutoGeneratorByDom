@@ -1,0 +1,1 @@
+# 自动生成Solr的data-config文件
