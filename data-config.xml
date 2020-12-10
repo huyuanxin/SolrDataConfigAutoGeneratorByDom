@@ -1,0 +1,10 @@
+<dataConfig driver="com.mysql.cj.jdbc.Driver" name="demo" password="root" url="jdbc:mysql://127.0.0.1:3306/demo" user="root">
+<document/>
+<entity dataSource="demo" deltaImportQuery="Select uid,`Name`,`Desc`,create_time,age From demo where uid='${dataimporter.delta.id}'" deltaQuery="select uid from demo where create_time &gt; '${dataimporter.last_index_time}'" name="demo" query="Select uid,`Name`,`Desc`,create_time,Age From demo">
+<field column="uid" name="id"/>
+<field column="Name" name="Name"/>
+<field column="Desc" name="Name"/>
+<field column="Create_Time" name="Name"/>
+<field column="Age" name="Name"/>
+</entity>
+</dataConfig>
